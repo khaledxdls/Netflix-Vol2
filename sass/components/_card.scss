@@ -1,0 +1,114 @@
+.card {
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 50rem;
+    &-side {
+        transition: all 1.2s ease;
+        background-color: red;
+        height: 50rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden;
+        border-radius: 3px;
+        overflow: hidden;
+        box-shadow: 0 1.5rem 4rem rgba(#000000, 0.15);
+        &-front {
+            background-color: #fff;
+        }
+        &-back {
+            background-color: gold;
+            transform: rotateY(180deg);
+            &-1 {
+                background-image: linear-gradient(to right bottom, #eacda3, #d6ae7b);
+            }
+            &-2 {
+                background-image: linear-gradient(to right bottom, #bdc3c7, #2c3e50);
+            }
+            &-3 {
+                background-image: linear-gradient(to right bottom, #cac531, #f3f9a7);
+            }
+        }
+    }
+    &:hover &-side-front {
+        transform: rotateY(-180deg);
+    }
+    &:hover &-side-back {
+        transform: rotateY(0);
+    }
+    &-picture {
+        background-size: cover;
+        background-position: top;
+        background-blend-mode: screen;
+        height: 23rem;
+        clip-path: polygon(0 0, 100% 0%, 100% 81%, 0 94%);
+        -webkit-clip-path: polygon(0 0, 100% 0%, 100% 81%, 0 94%);
+        &-1 {
+            background-image: linear-gradient(to right bottom, #eacda3, #d6ae7b), url(/img/pim-chu-z6NZ76_UTDI-unsplash.jpg);
+        }
+        &-2 {
+            background-image: linear-gradient(to right bottom, #bdc3c7, #2c3e50), url(/img/max-harlynking-91mLKFyJelQ-unsplash.jpg);
+        }
+        &-3 {
+            background-image: linear-gradient( to right bottom, rgba(202, 197, 49, 0.658), rgba(243, 249, 167, 0.61)), url(/img/alexander-dummer-UH-xs-FizTk-unsplash.jpg);
+        }
+    }
+    &-heading {
+        font-size: 2.8rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: #fff;
+        position: absolute;
+        top: 12rem;
+        right: -1rem;
+    }
+    &-heading-span {
+        padding: 1rem 1.5rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+        &-1 {
+            background-image: linear-gradient( to right bottom, rgba(234, 205, 163, 0.85), rgba(214, 174, 123, 0.85));
+        }
+        &-2 {
+            background-image: linear-gradient( to right bottom, rgba(189, 195, 199, 0.85), rgba(44, 62, 80, 0.85));
+        }
+        &-3 {
+            background-image: linear-gradient( to right bottom, rgba(202, 197, 49, 0.856), rgba(243, 249, 167, 0.856));
+        }
+    }
+    &-details {
+        padding: 2rem;
+        ul {
+            list-style: none;
+            width: 100%;
+            li {
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 1rem;
+                &:not(:last-child) {
+                    border-bottom: 2px solid #eee;
+                }
+            }
+        }
+    }
+    &-cta {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &-price-box {
+        text-align: center;
+        color: #eee;
+        margin-bottom: 8rem;
+    }
+    &-price-only {
+        font-size: 1.4rem;
+    }
+    &-price-value {
+        font-size: 6rem;
+        font-weight: 100;
+    }
+}

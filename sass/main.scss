@@ -1,0 +1,63 @@
+@import "base/base";
+@import "base/animation";
+@import "base/typography";
+@import "base/utilites";
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variable";
+@import "layout/footer";
+@import "layout/grid";
+@import "pages/home";
+@import "components/feature-box";
+@import "components/card";
+@import "components/videos";
+@import "components/compositions";
+@import "components/form";
+@import "components/store";
+@import "components/button";
+@import "layout/header";
+.header {
+    height: 95vh;
+    position: relative;
+    background-image: linear-gradient( to right bottom, rgba($color-black, 0.8), rgba(67, 67, 67, 0.8)), url(/img/tyson-moultrie-BQTHOGNHo08-unsplash.jpg);
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+}
+
+.logo {
+    position: absolute;
+    top: 2rem;
+    left: 4rem;
+    height: 4rem;
+}
+
+.text-box {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.heading-per {
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 6rem;
+}
+
+.heading-per-main {
+    display: block;
+    font-size: 2.1rem;
+    font-weight: 700;
+    letter-spacing: 2.5rem;
+    animation: moveinleft 1s ease-out;
+}
+
+.heading-per-sub {
+    display: block;
+    font-size: 1rem;
+    font-weight: 1000;
+    letter-spacing: 0.8rem;
+    animation: moveinRight 1s ease-out;
+}

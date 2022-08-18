@@ -1,0 +1,42 @@
+.row {
+    max-width: 114rem;
+    margin: 2rem auto;
+    &:not(:last-child) {
+        margin-bottom: 8rem;
+    }
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6rem;
+    padding: 2rem;
+}
+
+.row-gird-4-col {
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6rem;
+    padding: 2rem;
+}
+
+.grid-2-col {
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6rem;
+    padding: 6rem;
+}
+
+.row-gird-3-col {
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6rem;
+    padding: 5rem;
+}
+
+.grid-1 {
+    display: grid;
+    grid-template: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+}

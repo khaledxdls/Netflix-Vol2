@@ -1,0 +1,25 @@
+.u-center-text {
+    text-align: center;
+}
+
+.u-margin-buttom-2 {
+    margin-bottom: 1.5rem;
+}
+
+.u-margin-top-4 {
+    margin-top: 10rem;
+}
+
+.center {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.2rem;
+    justify-content: center;
+}
